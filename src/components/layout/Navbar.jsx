@@ -103,9 +103,9 @@ const Navbar = () => {
 
             {/* Main Header */}
             <div className={`container mx-auto px-4 transition-all duration-300 ${scrolled ? 'py-2.5' : 'py-4'}`}>
-                <div className="flex justify-between items-center gap-4">
+                <div className="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-8">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center gap-3 group" onClick={closeMenu}>
+                    <Link to="/" className="flex items-center gap-3 group flex-shrink-0" onClick={closeMenu}>
                         <motion.div
                             whileHover={{ scale: 1.1 }}
                             className="relative"
@@ -130,17 +130,13 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden lg:flex items-center gap-0.5 flex-wrap">
-                        {mainNavigation.map((item, idx) => (
-                            <div
-                                key={idx}
-                                className="relative group"
-                                onMouseEnter={() => handleDropdownEnter(idx)}
-                                onMouseLeave={handleDropdownLeave}
-                            >
+                    <nav className="hidden lg:grid justify-center gap-1 flex-1" style={{ gridTemplateColumns: 'repeat(7, minmax(0, 1fr))' }}>
+                        {mainNavigation.map((item, idx) => {
+                            const isSimpleLink = !item.type && item.href !== '#';
+                            const content = (
                                 <motion.div
                                     whileHover={{ y: -3 }}
-                                    className={`px-4 py-2.5 text-sm font-semibold rounded-lg transition-all duration-300 cursor-pointer flex items-center gap-1.5 relative overflow-hidden group/nav ${
+                                    className={`px-3 py-2.5 text-xs md:text-sm font-semibold rounded-lg transition-all duration-300 cursor-pointer flex items-center justify-center gap-1.5 relative overflow-hidden group/nav w-full ${
                                         activeDropdown === idx 
                                             ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg shadow-primary/30' 
                                             : 'text-primary hover:bg-primary/5'
@@ -157,19 +153,55 @@ const Navbar = () => {
                                         <span className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 opacity-0 group-hover/nav:opacity-100 transition-opacity duration-300"></span>
                                     )}
                                 </motion.div>
+                            );
 
-                                {/* Dropdown / Mega Menu */}
-                                <AnimatePresence>
-                                    {activeDropdown === idx && (
-                                        <motion.div
-                                            initial={{ opacity: 0, y: -10, scale: 0.95 }}
-                                            animate={{ opacity: 1, y: 0, scale: 1 }}
-                                            exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                                            transition={{ duration: 0.2, ease: "easeOut" }}
-                                            className={`absolute left-0 top-full mt-2 bg-white/95 backdrop-blur-xl rounded-xl border border-white/40 overflow-hidden z-50 shadow-2xl ${
-                                                item.type === 'mega' ? 'min-w-[280px] max-w-[320px]' : 'min-w-[220px]'
-                                            }`}
-                                        >
+                            if (isSimpleLink && item.external) {
+                                return (
+                                    <a
+                                        key={idx}
+                                        href={item.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={closeMenu}
+                                        className="relative group"
+                                    >
+                                        {content}
+                                    </a>
+                                );
+                            } else if (isSimpleLink) {
+                                return (
+                                    <Link
+                                        key={idx}
+                                        to={item.href}
+                                        onClick={closeMenu}
+                                        className="relative group"
+                                    >
+                                        {content}
+                                    </Link>
+                                );
+                            }
+
+                            return (
+                                <div
+                                    key={idx}
+                                    className="relative group"
+                                    onMouseEnter={() => handleDropdownEnter(idx)}
+                                    onMouseLeave={handleDropdownLeave}
+                                >
+                                    {content}
+
+                                    {/* Dropdown / Mega Menu */}
+                                    <AnimatePresence>
+                                        {activeDropdown === idx && (
+                                            <motion.div
+                                                initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                                                animate={{ opacity: 1, y: 0, scale: 1 }}
+                                                exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                                                transition={{ duration: 0.2, ease: "easeOut" }}
+                                                className={`absolute left-0 top-full mt-2 bg-white/95 backdrop-blur-xl rounded-xl border border-white/40 overflow-hidden z-50 shadow-2xl ${
+                                                    item.type === 'mega' ? 'min-w-[280px] max-w-[320px]' : 'min-w-[220px]'
+                                                }`}
+                                            >
                                             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-secondary to-primary/80"></div>
 
                                             {item.type === 'dropdown' ? (
@@ -248,13 +280,14 @@ const Navbar = () => {
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
-                            </div>
-                        ))}
+                                </div>
+                            );
+                        })}
                     </nav>
 
                     {/* Mobile Menu Button */}
                     <motion.button
-                        className="lg:hidden text-white bg-gradient-to-r from-primary to-secondary p-2.5 rounded-lg shadow-lg hover:shadow-xl shadow-primary/30 hover:shadow-primary/40 transition-all"
+                        className="lg:hidden text-white bg-gradient-to-r from-primary to-secondary p-2.5 rounded-lg shadow-lg hover:shadow-xl shadow-primary/30 hover:shadow-primary/40 transition-all flex-shrink-0"
                         onClick={toggleMenu}
                         whileTap={{ scale: 0.95 }}
                     >
@@ -295,16 +328,32 @@ const Navbar = () => {
                         className="lg:hidden bg-white/95 backdrop-blur-xl border-t border-white/20 overflow-y-auto max-h-[80vh]"
                     >
                         <div className="flex flex-col p-4 space-y-2">
-                            {mainNavigation.map((item, idx) => (
+                            {mainNavigation.map((item, idx) => {
+                                const isSimpleLink = !item.type && item.href !== '#';
+                                return (
                                 <div key={idx}>
                                     <div
                                         className="flex justify-between items-center py-2 px-2 text-primary font-semibold border-b border-gray-100"
-                                        onClick={() => toggleDropdownMobile(idx)}
+                                        onClick={() => {
+                                            if (!isSimpleLink) {
+                                                toggleDropdownMobile(idx);
+                                            }
+                                        }}
                                     >
-                                        {item.href === '#' ? (
+                                        {isSimpleLink ? (
+                                            item.external ? (
+                                                <a href={item.href} target="_blank" rel="noopener noreferrer" className="w-full" onClick={closeMenu}>{item.label}</a>
+                                            ) : (
+                                                <Link to={item.href} onClick={closeMenu} className="w-full">{item.label}</Link>
+                                            )
+                                        ) : item.href === '#' ? (
                                             <span>{item.label}</span>
                                         ) : (
-                                            <Link to={item.href} onClick={closeMenu}>{item.label}</Link>
+                                            item.external ? (
+                                                <a href={item.href} target="_blank" rel="noopener noreferrer" className="w-full" onClick={closeMenu}>{item.label}</a>
+                                            ) : (
+                                                <Link to={item.href} onClick={closeMenu} className="w-full">{item.label}</Link>
+                                            )
                                         )}
                                         {(item.type === 'dropdown' || item.type === 'mega') && <ChevronDown size={16} className={`transform transition-transform ${activeDropdown === idx ? 'rotate-180' : ''}`} />}
                                     </div>
@@ -370,7 +419,8 @@ const Navbar = () => {
                                         )}
                                     </AnimatePresence>
                                 </div>
-                            ))}
+                            );
+                            })}
 
                             {/* Top Bar Links for Mobile */}
                             <div className="pt-4 border-t mt-4">

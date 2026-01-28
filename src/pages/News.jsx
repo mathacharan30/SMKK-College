@@ -23,7 +23,7 @@ const News = () => {
                 breadcrumbs={[{ label: 'News' }]}
             />
 
-            <div className="container mx-auto px-4 py-10 -mt-16">
+            <div className="container mx-auto px-4 py-16">
                 {/* Year Filter */}
                 <motion.div
                     className="flex flex-wrap justify-center gap-4 mb-12"
