@@ -64,10 +64,7 @@ const router = createBrowserRouter([
         path: 'gallery',
         element: <GalleryPage type="photo" />,
       },
-      {
-        path: 'video',
-        element: <GalleryPage type="video" />,
-      },
+      // Video gallery route removed
       {
         path: 'library',
         element: <Library />,

@@ -134,9 +134,9 @@ const Hero = () => {
                                 className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-xs sm:max-w-2xl md:max-w-4xl mx-auto"
                             >
                                 {[
-                                    { icon: Award, label: "NAAC Accredited", value: "A Grade" },
+                                    { icon: Award, label: "NAAC Accredited", value: "B Grade" },
                                     { icon: Users, label: "Students", value: "500+" },
-                                    { icon: Sparkles, label: "Years of Excellence", value: "25+" }
+                                    { icon: Sparkles, label: "Years of Excellence", value: "29+" }
                                 ].map((stat, idx) => (
                                     <motion.div
                                         key={idx}

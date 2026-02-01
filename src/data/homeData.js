@@ -2,8 +2,8 @@ export const heroSlides = [
     {
         id: 1,
         image: '/images/college/sliders/one.jpg',
-        title: 'Welcome to SKMK College of Education',
-        subtitle: 'Empowering Future Educators with Excellence and Innovation'
+        title: '29 Years of Excellence',
+        subtitle: 'Empowering Future Educators since 1996. NAAC Accredited with B Grade.'
     },
     {
         id: 2,

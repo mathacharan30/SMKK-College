@@ -10,10 +10,7 @@ export const topBarLinks = [
 ];
 
 export const socialLinks = [
-    { icon: 'Facebook', href: '#' },
-    { icon: 'Twitter', href: '#' },
-    { icon: 'Mail', href: '#' }, // Replaced Google+
-    { icon: 'Youtube', href: '#' },
+    { icon: 'Mail', href: '#' } // Replaced Google+
 ];
 
 export const mainNavigation = [
@@ -125,8 +122,7 @@ export const mainNavigation = [
         href: '#',
         type: 'dropdown',
         items: [
-            { label: 'Photos', href: '/gallery' },
-            { label: 'Videos', href: '/video' }
+            { label: 'Photos', href: '/gallery' }
         ]
     },
     { label: 'News', href: '/news' },
