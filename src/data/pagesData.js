@@ -752,7 +752,7 @@ export const pagesData = {
         sections: [
             {
                 type: 'text',
-                content: `
+                content: ` 
                     <div class="prose max-w-none">
                         <h3 class="text-2xl font-bold text-secondary mb-4">About Mathematics Club 2022 - 23</h3>
                         <p class="text-gray-700 leading-relaxed mb-8">${facilitiesData.find(l => l.id === 7)?.description || ''}</p>

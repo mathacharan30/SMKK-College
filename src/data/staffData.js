@@ -62,17 +62,6 @@ export const teachingStaff = [
         "appointment": "01-06-2007",
         "payScale": "44,900 - 1,42,400"
     },
-    ,
-    {
-        "name": "Smt. Sujatha",
-        "designation": "Lecturer",
-        "image": "images/staff/sujatha-ks.jpg",
-        "qualification": "M.Sc, M.Ed",
-        "dob": "09-09-1979",
-        "appointment": "01-06-2010",
-        "payScale": "44,900 - 1,42,400"
-    },
-  
 ];
 
 

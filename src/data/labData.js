@@ -4,22 +4,21 @@ const facilitiesData = [
         title: "Chemistry Laboratory",
         image: "images/gallery/chemistry1.jpg",
         content:
-            "Our Chemistry Laboratory is a vibrant hub for scientific discovery, equipped with modern apparatus, safety equipment, and a wide range of chemicals. Students engage in hands-on experiments, learn about chemical reactions, and develop analytical skills. <ul><li><b>Key Features:</b> Fume hood, digital balances, glassware, safety showers</li><li><b>Activities:</b> Titration competitions, demonstration of chemical phenomena, safety workshops</li><li><b>Mission:</b> To inspire curiosity and a scientific mindset through practical chemistry.</li></ul>"
+            "Our Chemistry Laboratory is a dynamic and well-equipped center for scientific exploration and experimentation. It provides students with opportunities to observe chemical reactions, analyze substances, and understand theoretical concepts through practical application. The lab strictly follows safety standards and encourages curiosity-driven learning. <ul><li><b>Key Features:</b> Fume hoods, digital balances, volumetric glassware, reagent storage units, safety showers, fire extinguishers</li><li><b>Activities:</b> Titration experiments, salt analysis, qualitative and quantitative analysis, demonstration of chemical laws, safety awareness programs</li><li><b>Mission:</b> To develop analytical skills, scientific temper, and a deep understanding of chemistry through hands-on experimentation.</li></ul>"
     },
     {
         id: 2,
         title: "Computer Laboratory",
         image: "images/gallery/comp1.jpg",
         content:
-            "Our Computer Laboratory features high-speed internet, the latest software, and ergonomic workstations. Students learn programming, digital literacy, and multimedia skills. <ul><li><b>Key Features:</b> 24/7 Wi-Fi, projectors, coding bootcamps</li><li><b>Activities:</b> Coding challenges, app development workshops, tech talks</li><li><b>Mission:</b> To empower students with digital skills for the modern world.</li></ul>"
+            "Our Computer Laboratory is a modern digital learning hub designed to prepare students for the technology-driven world. It supports academic learning, programming practice, and digital creativity through high-performance systems and updated software tools. <ul><li><b>Key Features:</b> High-speed internet, multimedia projectors, licensed software, coding platforms, ergonomic seating</li><li><b>Activities:</b> Programming practice sessions, coding competitions, web development workshops, cybersecurity awareness programs</li><li><b>Mission:</b> To empower students with strong computing knowledge and practical digital skills for academic and professional success.</li></ul>"
     },
     {
         id: 3,
         title: "Geography Club",
         image: "images/gallery/geography.jpg",
-        description: "The Geography Club sparks curiosity about our planet, encouraging students to explore the world through maps, fieldwork, and environmental projects.",
-        content:
-            "Join the Geography Club to participate in map reading contests, field trips, and environmental awareness campaigns. <ul><li><b>Key Features:</b> Interactive map wall, weather station, field equipment</li><li><b>Activities:</b> Nature walks, GIS workshops, quiz competitions</li><li><b>Mission:</b> To foster a love for geography and environmental stewardship.</li></ul>",
+        description:
+            "The Geography Club serves as a platform for students to understand the physical and human aspects of the Earth. It promotes environmental awareness and spatial thinking through interactive activities and outdoor experiences. <ul><li><b>Key Features:</b> Interactive map wall, weather station instruments, globe collection, field survey tools</li><li><b>Activities:</b> Nature walks, GIS training workshops, map-reading contests, environmental awareness drives, quiz competitions</li><li><b>Mission:</b> To cultivate environmental responsibility and a deeper understanding of the Earth’s systems.</li></ul>",
         structure: {
             president: "Dr. Vishalakshi. K. K (Principal)",
             convener: "Manju J - Asst. Professor",
@@ -32,9 +31,8 @@ const facilitiesData = [
         id: 4,
         title: "History Club",
         image: "images/gallery/history.jpg",
-        description: "The History Club is a creative space for students to debate, deliberate, and experience new perspectives on historical events, shaping personalities and critical thinking.",
-        content:
-            "Step into the past with the History Club! We host debates, heritage walks, and exhibitions to bring history alive. <ul><li><b>Key Features:</b> Archive corner, documentary screenings, artifact displays</li><li><b>Activities:</b> History quizzes, dramatizations, guest lectures</li><li><b>Mission:</b> To inspire a deep appreciation for history and culture.</li></ul>",
+        description:
+            "The History Club provides a vibrant space for exploring the past through discussion, dramatization, and research. Students gain insight into civilizations, freedom movements, and cultural heritage while developing critical thinking skills. <ul><li><b>Key Features:</b> Archive corner, documentary screenings, historical models, photo exhibitions</li><li><b>Activities:</b> Heritage walks, debates on historical themes, history quizzes, dramatizations, guest lectures</li><li><b>Mission:</b> To instill respect for history and promote cultural awareness among students.</li></ul>",
         structure: {
             president: "Dr. Vishalakshi. K. K (Principal)",
             convener: "Smt. Sujatha.K",
@@ -45,16 +43,15 @@ const facilitiesData = [
         id: 5,
         title: "Language Club",
         image: "images/clients/i1.png",
-        content:
-            "The Language Club is a vibrant platform for students to enhance their communication and literary skills. <ul><li><b>Key Features:</b> Language lab, creative writing corner, public speaking stage</li><li><b>Activities:</b> Debates, elocution, essay writing, language games</li><li><b>Mission:</b> To nurture confident communicators and creative writers.</li></ul>"
+        description:
+            "The Language Club provides students with opportunities to improve their speaking, writing, and comprehension skills in various languages. It nurtures creativity and confidence through literary and communicative activities. <ul><li><b>Key Features:</b> Language laboratory, audio-visual aids, creative writing corner, speech practice stage</li><li><b>Activities:</b> Debates, elocution contests, essay writing, storytelling sessions, language games</li><li><b>Mission:</b> To create confident communicators and promote multilingual proficiency.</li></ul>"
     },
     {
         id: 6,
         title: "Literary Club",
         image: "images/gallery/literary.jpg",
-        description: "The Literary Club celebrates the rich heritage of languages and literature, empowering students to express themselves and explore cultural diversity.",
-        content:
-            "Unleash your creativity with the Literary Club! Participate in poetry slams, storytelling sessions, and drama workshops. <ul><li><b>Key Features:</b> Open mic events, book club, creative writing workshops</li><li><b>Activities:</b> Poetry writing, drama, essay competitions</li><li><b>Mission:</b> To foster a love for literature and self-expression.</li></ul>",
+        description:
+            "The Literary Club encourages students to explore literature through reading, writing, and performance. It provides a platform for expressing ideas, emotions, and creativity while appreciating different literary forms. <ul><li><b>Key Features:</b> Open mic stage, book club meetings, creative writing workshops, drama rehearsal space</li><li><b>Activities:</b> Poetry writing, short story competitions, drama performances, literary quizzes</li><li><b>Mission:</b> To inspire artistic expression and cultivate a lifelong love for literature.</li></ul>",
         structure: {
             president: "Dr. Vishalakshi. K. K - Principal",
             convener: "Dr. Sharath Kumar S M - Asst. Professor",
@@ -70,9 +67,8 @@ const facilitiesData = [
         id: 7,
         title: "Mathematics Club",
         image: "images/gallery/mathematics.jpg",
-        description: "The Mathematics Club motivates students to explore the beauty of mathematics through fun and challenging activities.",
-        content:
-            "Join the Mathematics Club for math quizzes, model making, and problem-solving marathons. <ul><li><b>Key Features:</b> Math lab, puzzle corner, interactive games</li><li><b>Activities:</b> Math olympiads, model preparation, logic games</li><li><b>Mission:</b> To develop logical thinking and a passion for mathematics.</li></ul>",
+        description:
+            "The Mathematics Club develops problem-solving skills and logical thinking through engaging activities and challenges. It helps students appreciate mathematics as both a science and an art. <ul><li><b>Key Features:</b> Math lab, puzzle corner, interactive learning boards, model display units</li><li><b>Activities:</b> Math olympiads, logical reasoning games, model preparation, quiz competitions</li><li><b>Mission:</b> To promote analytical thinking and enthusiasm for mathematics.</li></ul>",
         structure: {
             president: "Dr. Vishalakshi. K. K - Principal",
             convener: "Dr. Premkumar S - Asst. Professor",
@@ -85,22 +81,21 @@ const facilitiesData = [
         title: "Physics Laboratory",
         image: "images/gallery/physics1.jpg",
         content:
-            "The Physics Laboratory is a space for discovery, equipped with apparatus for mechanics, optics, and electricity. <ul><li><b>Key Features:</b> Oscilloscopes, laser kits, mechanics models</li><li><b>Activities:</b> Physics fairs, hands-on experiments, science demonstrations</li><li><b>Mission:</b> To make physics engaging and accessible through practical learning.</li></ul>"
+            "The Physics Laboratory allows students to explore physical laws through experimentation in mechanics, optics, heat, and electricity. It bridges theory with real-world observation. <ul><li><b>Key Features:</b> Oscilloscopes, laser kits, mechanics models, electrical circuits</li><li><b>Activities:</b> Physics exhibitions, hands-on experiments, working model displays, science fairs</li><li><b>Mission:</b> To make physics practical, interesting, and application-oriented.</li></ul>"
     },
     {
         id: 9,
         title: "Psychology Laboratory",
         image: "images/gallery/psy1.jpg",
         content:
-            "The Psychology Laboratory offers a unique environment to explore human behavior and mental processes. <ul><li><b>Key Features:</b> Psychological test kits, observation rooms, counseling resources</li><li><b>Activities:</b> Personality assessments, group experiments, mental health awareness drives</li><li><b>Mission:</b> To promote understanding of psychology through interactive learning.</li></ul>"
+            "The Psychology Laboratory provides students with an environment to understand human behavior and mental processes using scientific tools and methods. <ul><li><b>Key Features:</b> Psychological test kits, counseling resources, observation rooms</li><li><b>Activities:</b> Personality testing, group behavior studies, mental health awareness drives</li><li><b>Mission:</b> To promote emotional intelligence and scientific study of behavior.</li></ul>"
     },
     {
         id: 10,
         title: "Science Club",
         image: "images/gallery/science.jpg",
-        description: "The Science Club develops scientific attitude and genuine interest in science, supplementing classroom learning with exciting activities.",
-        content:
-            "Ignite your curiosity with the Science Club! Take part in exhibitions, model making, and science shows. <ul><li><b>Key Features:</b> Science fair, innovation lab, guest scientist sessions</li><li><b>Activities:</b> Model making, science quizzes, innovation challenges</li><li><b>Mission:</b> To nurture scientific curiosity and innovation.</li></ul>",
+        description:
+            "The Science Club nurtures innovation and curiosity by encouraging students to explore scientific ideas beyond the classroom. <ul><li><b>Key Features:</b> Innovation lab, science exhibition zone, model-making tools</li><li><b>Activities:</b> Science fairs, model construction, innovation challenges, quiz competitions</li><li><b>Mission:</b> To encourage scientific thinking and creativity.</li></ul>",
         structure: {
             president: "Dr. Vishalakshi. K. K - Principal",
             convener: "Dr. Selvakumar S - Asst. Professor",
@@ -113,7 +108,7 @@ const facilitiesData = [
         title: "Biology Laboratory",
         image: "images/gallery/bio2.jpg",
         content:
-            "The Biology Laboratory is a lively space for exploring the wonders of life. Students use microscopes, models, and specimens to learn about plants, animals, and ecosystems. <ul><li><b>Key Features:</b> Microscopes, specimen collection, interactive charts</li><li><b>Activities:</b> Dissection workshops, nature studies, biology quizzes</li><li><b>Mission:</b> To cultivate a passion for life sciences through hands-on learning.</li></ul>"
+            "The Biology Laboratory supports learning in botany, zoology, and environmental science through direct observation and experimentation. <ul><li><b>Key Features:</b> Microscopes, specimen collections, charts, preserved samples</li><li><b>Activities:</b> Dissection sessions, biodiversity studies, biology quizzes</li><li><b>Mission:</b> To nurture curiosity about living organisms and ecosystems.</li></ul>"
     }
 ];
 
