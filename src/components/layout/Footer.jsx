@@ -76,7 +76,7 @@ const Footer = () => {
             <div className="bg-black py-6 border-t border-gray-800">
                 <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                     <p className="mb-4 md:mb-0 text-center md:text-left">
-                        © 2023 - 2024. All Rights Reserved.
+                        © 2025 - 2026. All Rights Reserved.
                     </p>
                     <ul className="flex space-x-4">
                         <li><Link to="/" className="hover:text-white transition-colors">Home</Link></li>

@@ -51,16 +51,6 @@ const NewsDetail = () => {
                     <div className="prose max-w-none text-gray-700 leading-relaxed text-lg">
                         <div dangerouslySetInnerHTML={{ __html: newsItem.content }} />
                     </div>
-
-                    <div className="mt-12 pt-8 border-t">
-                        <h4 className="font-bold text-gray-800 mb-4">Share this post</h4>
-                        {/* Social Share buttons placeholders */}
-                        <div className="flex space-x-2">
-                            <button className="bg-blue-600 text-white px-4 py-2 rounded text-sm">Facebook</button>
-                            <button className="bg-sky-500 text-white px-4 py-2 rounded text-sm">Twitter</button>
-                            <button className="bg-green-600 text-white px-4 py-2 rounded text-sm">WhatsApp</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

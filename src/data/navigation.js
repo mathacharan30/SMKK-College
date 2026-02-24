@@ -88,7 +88,7 @@ export const mainNavigation = [
     },
     {
         label: 'Fees',
-        href: '/documents/Fees structure-2024.pdf',
+        href: '/documents/fees-structure-2025.pdf',
         external: true
     },
     {
@@ -143,7 +143,8 @@ export const mainNavigation = [
                     { label: 'Grant - in - Aid Order - I', href: '/documents/first-grant-aid.pdf', external: true },
                     { label: 'Grant - in - Aid Order - II', href: '/documents/second-grant-aid.pdf', external: true },
                     { label: 'Permanent Affiliation Issued by Govt of Karnataka', href: '/documents/gok.pdf', external: true },
-                    { label: 'Affiliation Issued by University of Mysore', href: '/documents/uom.pdf', external: true }
+                    { label: 'Affiliation Issued by University of Mysore', href: '/documents/uom.pdf', external: true },
+                    { label: 'Provisional Certificate', href: '/documents/provisional-certificate.pdf', external: true }
                 ]
             },
             {

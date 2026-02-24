@@ -13,7 +13,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="flex flex-col w-full -mt-[160px] md:-mt-[140px]">
+        <div className="flex flex-col w-full -mt-[140px] sm:-mt-[130px] md:-mt-[120px] lg:-mt-[110px]">
             <Hero />
             <Features />
             <AboutSection />

@@ -7,8 +7,7 @@ const Layout = () => {
     return (
         <div className="flex flex-col min-h-screen">
             <Navbar />
-            {/* Add padding-top to account for fixed navbar - increased to prevent overlap */}
-            <main className="flex-grow pt-[160px] md:pt-[140px]">
+            <main className="flex-grow pt-[250px] sm:pt-[130px] md:pt-[120px] lg:pt-[110px]">
                 <Outlet />
             </main>
             <Footer />

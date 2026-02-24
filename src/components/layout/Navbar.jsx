@@ -116,17 +116,6 @@ const Navbar = () => {
                                 className={`transition-all duration-300 ${scrolled ? 'h-12' : 'h-16'} w-auto drop-shadow-lg`}
                             />
                         </motion.div>
-                        {/* <div className="hidden 2xl:block">
-                            <motion.h1
-                                className={`font-bold text-primary font-heading uppercase leading-tight transition-all duration-300 ${scrolled ? 'text-sm' : 'text-lg'}`}
-                                initial={{ opacity: 0, x: -20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.5 }}
-                            >
-                                Sri Kaginele Mahasamsthana <br />
-                                <span className="text-secondary">Kanaka Gurupeetha</span> College of Education
-                            </motion.h1>
-                        </div> */}
                     </Link>
 
                     {/* Desktop Navigation */}

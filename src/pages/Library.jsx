@@ -51,7 +51,7 @@ const Library = () => {
                             <h3 className="text-xl font-bold text-secondary mb-2">
                                 Part A: Number of books available in the Library
                             </h3>
-                            <p className="text-3xl font-bold text-primary">6,567 Books</p>
+                            <p className="text-3xl font-bold text-primary">6,592 Books</p>
                         </div>
 
                         {/* Part B: Journals */}
@@ -60,28 +60,75 @@ const Library = () => {
                                 <span className="bg-secondary text-white px-3 py-1 rounded-md mr-3">Part B</span>
                                 Journals
                             </h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {[
-                                    "Journals of Indian Education",
-                                    "Indian Journal of Psychological Counselling",
-                                    "Indian Educational Review",
-                                    "Edu Tracks",
-                                    "Resonance – Journal of Science Education",
-                                    "Viveka Prabha",
-                                    "NCTE Journal",
-                                    "Journal of Community Guidance and Research",
-                                    "Guidance and Research"
-                                ].map((journal, index) => (
-                                    <div
-                                        key={index}
-                                        className="flex items-center bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
-                                    >
-                                        <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-3 flex-shrink-0">
-                                            {index + 1}
-                                        </span>
-                                        <h4 className="text-gray-700 font-medium">{journal}</h4>
-                                    </div>
-                                ))}
+                            
+                            {/* EDUTRACKS Section */}
+                            <div className="mb-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {[
+                                        "Edutracks",
+                                        "Journal of Community Guidance & Research",
+                                        "School Science",
+                                        "Journal of Indian Education",
+                                        "Indian Education Review"
+                                    ].map((journal, index) => (
+                                        <div
+                                            key={index}
+                                            className="flex items-center bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+                                        >
+                                            <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-3 flex-shrink-0">
+                                                {index + 1}
+                                            </span>
+                                            <h5 className="text-gray-700 font-medium">{journal}</h5>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* International Section */}
+                            <div className="mb-6">
+                                <h4 className="text-lg font-bold text-gray-800 mb-3 bg-gray-100 p-3 rounded-md">
+                                    International 
+                                </h4>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {[
+                                        "International Journal of Educational Learning",
+                                        "International Journal of Research in Education"
+                                    ].map((journal, index) => (
+                                        <div
+                                            key={index}
+                                            className="flex items-center bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+                                        >
+                                            <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-3 flex-shrink-0">
+                                                {index + 1}
+                                            </span>
+                                            <h5 className="text-gray-700 font-medium">{journal}</h5>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Indian Section */}
+                            <div className="mb-6">
+                                <h4 className="text-lg font-bold text-gray-800 mb-3 bg-gray-100 p-3 rounded-md">
+                                    Indian
+                                </h4>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {[
+                                        "Journal of Contemporary India and Education",
+                                        "Journal of Educational Evaluation",
+                                        "Indian Journal of Educational Psychology"
+                                    ].map((journal, index) => (
+                                        <div
+                                            key={index}
+                                            className="flex items-center bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+                                        >
+                                            <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-3 flex-shrink-0">
+                                                {index + 1}
+                                            </span>
+                                            <h5 className="text-gray-700 font-medium">{journal}</h5>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
